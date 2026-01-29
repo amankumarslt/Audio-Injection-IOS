@@ -21,7 +21,7 @@ def test_audio_recording(driver):
         print("▶️ Locating mic button")
         el1 = driver.find_element(
             by=AppiumBy.XPATH,
-            value='//*[@name="mic.fill" and @type="XCUIElementTypeButton"]'
+            value='//XCUIElementTypeButton[@name="record_stop_button"]'
         )
         print("Mic button found")
         el1.click()
